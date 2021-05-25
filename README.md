@@ -8,7 +8,6 @@ This module sets up Stripe for a single electronic product - e.g. a paywalled bl
 
 ## Common Instructions
 
-
 To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`
