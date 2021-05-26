@@ -1,8 +1,18 @@
 # Store Card and Charge Later
 
-This module sets up Stripe for a single electronic product - e.g. a paywalled blog. 
+This module sets up a site that keeps the credit card of a user and charges it periodically in future according to provided service. As an example, the user can request cabs and get charged after completion of service.
+
+The credit card number is requested, when the user requests for service for the first time.
 
 ## Implementation
+
+
+### phx_gen_auth
+
+The user model is created using the [phx_gen_auth library](https://github.com/aaronrenner/phx_gen_auth).
+
+### Setting up migrations/models
+
 
 
 
