@@ -1,4 +1,4 @@
-<h1>Listing Posts</h1>
+<h1>Listing Projects</h1>
 
 <table>
   <thead>
@@ -10,19 +10,19 @@
     </tr>
   </thead>
   <tbody>
-<%= for post <- @posts do %>
+<%= for project <- @projects do %>
     <tr>
-      <td><%= post.title %></td>
-      <td><%= post.body %></td>
+      <td><%= project.title %></td>
+      <td><%= project.body %></td>
 
       <td>
-        <span><%= link "Show", to: Routes.post_path(@conn, :show, post) %></span>
-        <span><%= link "Edit", to: Routes.post_path(@conn, :edit, post) %></span>
-        <span><%= link "Delete", to: Routes.post_path(@conn, :delete, post), method: :delete, data: [confirm: "Are you sure?"] %></span>
+        <span><%= link "Show", to: Routes.project_path(@conn, :show, project) %></span>
+        <span><%= link "Edit", to: Routes.project_path(@conn, :edit, project) %></span>
+        <span><%= link "Delete", to: Routes.project_path(@conn, :delete, project), method: :delete, data: [confirm: "Are you sure?"] %></span>
       </td>
     </tr>
 <% end %>
   </tbody>
 </table>
 
-<span><%= link "New Post", to: Routes.post_path(@conn, :new) %></span>
+<span><%= link "New Project", to: Routes.project_path(@conn, :new) %></span>
